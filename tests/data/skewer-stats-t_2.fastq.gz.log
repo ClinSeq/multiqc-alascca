@@ -1,0 +1,85 @@
+COMMAND LINE:	skewer -z -t 1 --quiet -o /tmp//skewer-67435303-2506-4927-b52c-05f5e11903dd/skewer /home/vagrant/pyautoseq/tests/fastq/t_1.fastq.gz /home/vagrant/pyautoseq/tests/fastq/t_2.fastq.gz
+Input file:	/home/vagrant/pyautoseq/tests/fastq/t_1.fastq.gz
+Paired file:	/home/vagrant/pyautoseq/tests/fastq/t_2.fastq.gz
+trimmed:	/tmp//skewer-67435303-2506-4927-b52c-05f5e11903dd/skewer-trimmed-pair1.fastq.gz, /tmp//skewer-67435303-2506-4927-b52c-05f5e11903dd/skewer-trimmed-pair2.fastq.gz
+
+Parameters used:
+-- 3' end adapter sequence (-x):	AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+-- paired 3' end adapter sequence (-y):	AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA
+-- maximum error ratio allowed (-r):	0.100
+-- maximum indel error ratio allowed (-d):	0.030
+-- minimum read length allowed after trimming (-l):	18
+-- file format (-f):		Sanger/Illumina 1.8+ FASTQ (auto detected)
+Mon Feb 29 13:09:41 2016 >> started
+
+Mon Feb 29 13:09:42 2016 >> done (0.711s)
+25668 read pairs processed; of these:
+    0 ( 0.00%) short read pairs filtered out after trimming by size control
+    0 ( 0.00%) empty read pairs filtered out after trimming by size control
+25668 (100.00%) read pairs available; of these:
+25668 (100.00%) untrimmed read pairs available after processing
+
+Length distribution of reads after trimming:
+length	count	percentage
+ 40	    2	  0.01%
+ 41	    0	  0.00%
+ 42	    4	  0.02%
+ 43	    1	  0.00%
+ 44	    0	  0.00%
+ 45	    1	  0.00%
+ 46	    0	  0.00%
+ 47	    2	  0.01%
+ 48	    5	  0.02%
+ 49	    0	  0.00%
+ 50	    2	  0.01%
+ 51	    3	  0.01%
+ 52	    1	  0.00%
+ 53	    3	  0.01%
+ 54	    4	  0.02%
+ 55	    3	  0.01%
+ 56	    8	  0.03%
+ 57	    5	  0.02%
+ 58	   11	  0.04%
+ 59	    5	  0.02%
+ 60	    8	  0.03%
+ 61	    4	  0.02%
+ 62	    7	  0.03%
+ 63	   10	  0.04%
+ 64	   12	  0.05%
+ 65	   11	  0.04%
+ 66	    6	  0.02%
+ 67	   16	  0.06%
+ 68	   13	  0.05%
+ 69	   16	  0.06%
+ 70	    7	  0.03%
+ 71	   11	  0.04%
+ 72	   18	  0.07%
+ 73	   12	  0.05%
+ 74	   17	  0.07%
+ 75	   15	  0.06%
+ 76	   22	  0.09%
+ 77	   24	  0.09%
+ 78	   26	  0.10%
+ 79	   16	  0.06%
+ 80	   29	  0.11%
+ 81	   24	  0.09%
+ 82	   23	  0.09%
+ 83	   21	  0.08%
+ 84	   22	  0.09%
+ 85	   19	  0.07%
+ 86	   29	  0.11%
+ 87	   31	  0.12%
+ 88	   33	  0.13%
+ 89	   32	  0.12%
+ 90	   38	  0.15%
+ 91	   28	  0.11%
+ 92	   35	  0.14%
+ 93	   45	  0.18%
+ 94	   33	  0.13%
+ 95	   40	  0.16%
+ 96	   43	  0.17%
+ 97	   50	  0.19%
+ 98	   44	  0.17%
+ 99	   49	  0.19%
+100	   48	  0.19%
+101	24621	 95.92%

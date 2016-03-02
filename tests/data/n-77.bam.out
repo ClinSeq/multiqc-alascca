@@ -1,0 +1,16 @@
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (175, 238, 320)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 610)
+[M::mem_pestat] mean and std.dev: (253.54, 105.50)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 755)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[main] Version: 0.7.12-r1039
+[main] CMD: bwa mem -M -v 1 -R @RG\tID:n-77\tSM:n-77\tLB:n-77\tPL:ILLUMINA -t 1 /proj/b2010040/private/nobackup/autoseq-genome/bwa/human_g1k_v37_decoy.fasta /vagrant/p2/bams/panel/skewer/n-77_1.fastq.gz /vagrant/p2/bams/panel/skewer/n-77_2.fastq.gz
+[main] Real time: 35.474 sec; CPU: 26.992 sec
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Loaded 86 header sequence entries.
+samblaster: Removed 0 of 42931 (0.00%) read ids as duplicates using 2556k memory in 0.044S CPU seconds and 36S wall time.
