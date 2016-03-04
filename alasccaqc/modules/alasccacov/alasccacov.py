@@ -27,7 +27,7 @@ class MultiqcModule(BaseMultiqcModule):
         self.alasccacov_data_dens = dict()
         self.alasccacov_data_count = dict()
 
-        conf_sp = {'contents': '# alascca-targets-coverage-histogram'}
+        conf_sp = {'contents': '# target_coverage_histogram'}
         for f in self.find_log_files(conf_sp, filehandles=True):
             self.parse_coverage_file(f)
 
@@ -64,7 +64,6 @@ class MultiqcModule(BaseMultiqcModule):
             'min': 0
         }
         self.general_stats_addcols(data, headers)
-
 
         self.add_plots()
 
@@ -121,8 +120,8 @@ class MultiqcModule(BaseMultiqcModule):
 
     def parse_coverage_file(self, f):
         fh = f['f']
-        name_regex = "#\sbedtools-coverage-hist:\s(\S+)"
-        hist_regex = "all\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+\.\d+)"
+        name_regex = "#\starget_coverage_histogram,\sbam:\s(\S+)"
+        hist_regex = "(\d+)\s+(\d+)\s+(\d+)\s+(\d+\.\d+)"
         s_name = None
         dat_dens = {}
         dat_count = {}
