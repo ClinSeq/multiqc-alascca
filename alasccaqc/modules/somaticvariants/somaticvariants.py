@@ -57,5 +57,3 @@ class MultiqcModule(BaseMultiqcModule):
                         if not call.sample in self.somatic_variants_data:
                             self.somatic_variants_data[call.sample] = {'n_somatic_variants': 0}
                         self.somatic_variants_data[call.sample]['n_somatic_variants'] += 1
-
-            print(f['fn'], f.keys())
