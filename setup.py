@@ -1,39 +1,39 @@
-
 from setuptools import setup, find_packages
 
 version = '0.1.1'
 
 setup(
-    name = 'multiqc-alascca',
-    version = version,
-    author = 'Daniel Klevebring',
-    author_email = 'daniel.klevebring@ki.se',
-    description = "QC for the ALASCCA study",
-    long_description = __doc__,
-    keywords = 'bioinformatics',
-#    url = 'http://multiqc.info',
-#    download_url = 'https://github.com/ewels/MultiQC/releases',
-    license = 'MIT',
-    packages = find_packages(),
-    include_package_data = True,
-    zip_safe = False,
-    install_requires = [
+    name='multiqc-alascca',
+    version=version,
+    author='Daniel Klevebring',
+    author_email='daniel.klevebring@ki.se',
+    description="QC for the ALASCCA study",
+    long_description=__doc__,
+    keywords='bioinformatics',
+    #    url = 'http://multiqc.info',
+    #    download_url = 'https://github.com/ewels/MultiQC/releases',
+    license='MIT',
+    packages=find_packages(),
+    include_package_data=True,
+    zip_safe=False,
+    install_requires=[
         'jinja2',
         'simplejson',
         'pyyaml',
         'click', 'multiqc'
     ],
-    entry_points = {
+    entry_points={
         'multiqc.modules.v1': [
             'alasccaqc = alasccaqc.modules.alasccacov:MultiqcModule',
             'hzconcordance = alasccaqc.modules.hzconcordance:MultiqcModule',
+            'somaticvariants = alasccaqc.modules.somaticvariants:MultiqcModule',
         ],
         'multiqc.hooks.v1': [
             'after_modules = alasccaqc.hooks:set_sample_status',
         ]
 
     },
-    classifiers = [
+    classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
         'Environment :: Web Environment',
@@ -50,4 +50,3 @@ setup(
         'Topic :: Scientific/Engineering :: Visualization',
     ],
 )
-
