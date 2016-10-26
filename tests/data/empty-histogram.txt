@@ -1,0 +1,2 @@
+# target_coverage_histogram, bam: /nfs/ALASCCA/autoseq-output/ALASCCA/P-00046088/AL-P-00046088-T-03099031-TD20161011_1337-CB20161014_1630_AL-P-00046088-N-03103535-TD20161011_1337-CB20161014_1630_144/bams/panel/AL-P-00046088-N-03103535-TD20161011_1337-CB20161014_1630.bam
+# coverage	bases_at_coverage	total_bases	fraction_bases_at_coverage

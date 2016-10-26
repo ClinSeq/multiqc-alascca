@@ -70,11 +70,21 @@ class MultiqcModule(BaseMultiqcModule):
         log.info("Found {} reports".format(len(self.alasccacov_data_dens)))
 
     def add_plots(self):
+
+        # normalize coverage to range 0-1
         normalized_cov = copy.deepcopy(self.alasccacov_data_dens)
         for s_name in normalized_cov:
-            max_dens = max(y for x, y in normalized_cov[s_name].items())
-            for x, y in normalized_cov[s_name].items():
-                normalized_cov[s_name][x] = y / max_dens
+            if normalized_cov[s_name].items():
+                # if there is any coverage
+                norm_cov_sample = [cov_dens for cov, cov_dens in normalized_cov[s_name].items()]
+                max_dens = max(norm_cov_sample)
+
+                for cov, cov_dens in normalized_cov[s_name].items():
+                    normalized_cov[s_name][cov] = cov_dens / max_dens
+            else:
+                # for failed samples, no regions are covered, so handle this special case
+                normalized_cov[s_name][0] = 1
+                normalized_cov[s_name][1] = 0
 
         pconfig = {
             'id': 'coverage_histogram',
