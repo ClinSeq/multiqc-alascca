@@ -20,7 +20,7 @@ setup(
         'jinja2',
         'simplejson',
         'pyyaml',
-        'click', 'multiqc'
+        'click', 'multiqc', 'pyvcf'
     ],
     entry_points={
         'multiqc.modules.v1': [
