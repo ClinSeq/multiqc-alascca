@@ -5,7 +5,8 @@
 from __future__ import print_function
 from collections import OrderedDict
 import logging
-from multiqc import config, BaseMultiqcModule
+from multiqc import config
+from multiqc.modules.base_module import BaseMultiqcModule
 
 # Initialise the logger
 log = logging.getLogger('multiqc')

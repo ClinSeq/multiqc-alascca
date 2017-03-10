@@ -8,7 +8,8 @@ from collections import OrderedDict
 import logging
 import re
 import copy
-from multiqc import config, BaseMultiqcModule
+from multiqc import config
+from multiqc.modules.base_module import BaseMultiqcModule
 
 # Initialise the logger
 log = logging.getLogger('multiqc')
